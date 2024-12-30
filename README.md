@@ -1,6 +1,8 @@
 # Dice Game
 The **Dice Game** is a simple and interactive React-based application that simulates a dice-rolling game. Players select a number and try to predict the outcome of the dice roll, while also adjusting the difficulty level to make the game more challenging.
 
+Try it out: [https://mayurvadhadiya360.github.io/dice-game/](https://mayurvadhadiya360.github.io/dice-game/)
+
 ## Features
 - **Dynamic Difficulty Levels**: Players can choose from `Easy`, `Medium`, `Difficult`, `Hard`, and `Hell` modes, each with unique dice probabilities and rewards.
 - **Score Management**: Earn points based on the correctness of predictions or lose points for incorrect guesses.

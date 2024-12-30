@@ -17,12 +17,12 @@ const DiceGame = () => {
   const [gameDifficulty, setGameDifficulty] = useState('easy');
 
   const dices = {
-    "1": "/dices/dice_1.png",
-    "2": "/dices/dice_2.png",
-    "3": "/dices/dice_3.png",
-    "4": "/dices/dice_4.png",
-    "5": "/dices/dice_5.png",
-    "6": "/dices/dice_6.png",
+    "1": "dices/dice_1.png",
+    "2": "dices/dice_2.png",
+    "3": "dices/dice_3.png",
+    "4": "dices/dice_4.png",
+    "5": "dices/dice_5.png",
+    "6": "dices/dice_6.png",
   }
 
   const diceProbability = {
@@ -253,7 +253,7 @@ const DiceGame = () => {
         <div className='game-controls'>
           <div className='random-dice-img'>
             <div onClick={(e) => { if (!isRolling) handleDiceRoll(); console.log("render"); }} >
-              <img src={dices[`${currentDiceFace}`]} className='dice-img' alt='dice' />
+              <img src={`${process.env.PUBLIC_URL}/${dices[currentDiceFace.toString()]}`} className='dice-img' alt='dice' />
             </div>
           </div>
           <div className='game-hint-text'>
