@@ -9,7 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/game' element={<DiceGame/>} />
+        <Route path="/dice-game/" element={<Home />} />
+        <Route path='/dice-game/game' element={<DiceGame/>} />
       </Routes>
     </BrowserRouter>
   );
